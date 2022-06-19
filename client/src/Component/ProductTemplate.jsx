@@ -35,9 +35,16 @@ const ProductTemplate = ({ product }) => {
             borderRadius="lg"
             overflow="hidden"
             m="10px"
-            w="200"
+            style={{ boxSizing: 'border-box' }}
+            w={350}
           >
-            <Image src={p.image} alt={property.imageAlt} h="300" />
+            <Image
+              src={p.image}
+              alt={property.imageAlt}
+              h="300"
+              objectFit="cover"
+              boxSize="350px"
+            />
 
             <Box p="6">
               <Box display="flex" alignItems="baseline"></Box>
@@ -60,6 +67,7 @@ const ProductTemplate = ({ product }) => {
             </Box>
             <Flex p="2" direction="row-reverse">
               <Button
+                colorScheme="teal"
                 disabled={
                   JSON.parse(localStorage.getItem('basket'))
                     ?.map(a => a[0])

@@ -8,7 +8,10 @@ import {
   Heading,
   Input,
   Button,
+  InputGroup,
+  InputLeftElement,
 } from '@chakra-ui/react';
+import { PhoneIcon } from '@chakra-ui/icons';
 import { ContextAPI } from '../Middlewares/ContextAPI';
 
 const Login = () => {
@@ -45,8 +48,9 @@ const Login = () => {
             onChange={e => handleChange(e)}
             style={{ marginBottom: '10px' }}
           />
+
           <Button
-            colorScheme="telegram"
+            colorScheme="teal"
             variant="solid"
             onClick={e => createUser(e, values)}
           >

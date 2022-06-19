@@ -17,7 +17,7 @@ import {
   Flex,
   Divider,
 } from '@chakra-ui/react';
-import { BellIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Orderlist = () => {
   const { basket, setBasket, users, account, currentUser, buyProduct } =
@@ -36,7 +36,7 @@ const Orderlist = () => {
 
   return (
     <div>
-      <BellIcon onClick={onOpen} />
+      <HamburgerIcon onClick={onOpen} />
       <Drawer
         isOpen={isOpen}
         placement="right"

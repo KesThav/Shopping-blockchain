@@ -20,6 +20,7 @@ import {
 import Landing from './Component/Landing';
 import Orderlist from './Component/Orderlist';
 import Dashboard from './Component/Dashboard';
+import './App.css';
 
 function App() {
   const provideUrl = process.env.PROVIDER_URL || 'http://localhost:7545';

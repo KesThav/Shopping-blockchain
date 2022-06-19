@@ -20,11 +20,12 @@ const Header = props => {
       justify="space-between"
       wrap="wrap"
       padding={3}
+      style={{ boxSizing: 'border-box' }}
       bg="teal.500"
       color="white"
       {...props}
     >
-      <Flex align="center" mr={5}>
+      <Flex align="center">
         <Heading as="h1" size="lg" letterSpacing={'tighter'}>
           <Link to="/">Shop</Link>
         </Heading>

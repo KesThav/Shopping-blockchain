@@ -14,10 +14,10 @@ const Landing = () => {
 
   return (
     <RenderIf account={currentUser}>
-      <Flex direction="row-reverse" p="10">
+      <Flex direction="row-reverse" p="10" style={{ boxSizing: 'border-box' }}>
         <AddProduct />
       </Flex>
-      <Flex wrap="wrap" grow="1" w="100vw" align="center" justify="left">
+      <Flex wrap="wrap" grow="1" align="center" justify="left">
         {products && <ProductTemplate product={products} />}
       </Flex>
     </RenderIf>
