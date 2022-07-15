@@ -1,6 +1,6 @@
 # Shopping-blockchain
 
-Shopping app working on Blockchain 
+The goal of this project is to develop a shopping application (Vinted-like) whose backend runs on the blockchain. Users can sell and buy item. The frontend was developed with ReactJS and Chakra UI and the backend was developed with Solidity.
 
 ## Setup
 
